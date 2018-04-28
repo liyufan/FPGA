@@ -21,7 +21,7 @@
 
 module seg7ment_sub(
 input [1:0] num,
-output reg [6:0] a_to_g );
+output reg [6:0] a_to_g);
 
 always @(*)
 case(num)
@@ -137,6 +137,6 @@ assign an = an_reg;
 assign led = led_reg;
 
 seg7ment_sub A1(.num(num),
-					.a_to_g(a_to_g)
+		.a_to_g(a_to_g)
 );
 endmodule
